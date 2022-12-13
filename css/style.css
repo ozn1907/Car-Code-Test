@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Barlow Condensed', sans-serif;
+    background: #fafafa;
+    max-width: 400px;
+    height: 100vh;
+    padding: 15px;
+}
+
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.info {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+#car {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #ecedee;
+    border-radius: 25px;
+    padding: 15px;
+}
+
+#car:first-child .car-info {
+    padding-top: 10px;
+}
+
+#car:last-child {
+    background-color: #282930;
+}
+
+#car:last-child p {
+    color: #fff;
+}
+
+#car:last-child .car-info img:last-child {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 100%;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.thin {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.bold {
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+#person,
+#map img {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background: #ecedee;
+    border-radius: 25px;
+    max-width: 170px;
+}
+
+
+.car-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+
+.details {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.details:first-child{
+    margin-bottom: 10px;
+}
+
+.details img {
+    width: 20px;
+}
+
+#car:last-child .bold:nth-of-type(2) {
+    border-top: 1px solid #ecedee;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+#person {
+    text-align: center;
+    padding: 10px 45px;
+}
+
+p {
+    font-size: 1.2rem;
+    font-weight: lighter;
+    color: #333;
+}
+
+#person p:last-child {
+    font-weight: bold;
+}
